@@ -1,0 +1,101 @@
+todo-manager: cwd=C:\Programs\MESSAGE_INT\message_bin\devmsgui
+msguirc english
+rc readmsguirc: 0
+msguirc english
+C:/Programs/MESSAGE_INT/message_bin/devmsgui/powerch -g C:/Programs/MESSAGE_INT/models/TAOUSSA_RS/data/TAOUSSA_RS.gen -R . -s adb -i pch -o powerch TAOUSSA_RS
+data/TAOUSSA_RS.pch
+data/TAOUSSA_RS_adb.pch
+data/TAOUSSA_RS_adb.pch
+C:/Programs/MESSAGE_INT/message_bin/devmsgui/powerch: no input file found
+Generating default file
+MSG_BIN C:/Programs/MESSAGE_INT/message_bin/
+tcmd C:\Programs\MESSAGE_INT\message_bin\tcsh -c "C:/Programs/MESSAGE_INT/message_bin/mxg -f mxgerr -o glpk -v -n no -s adb  -X s -x intm/powerchs.mps -W inf -Y 1 TAOUSSA_RS"
+invSwit: 4
+Could not open C:/Programs/MESSAGE_INT/message_bin//devmsgui/units.exe -I C:/Programs/MESSAGE_INT/models/mms_fils adb TAOUSSA_RS TAOUSSA_RS
+pid=9896pid=0
+C:/Programs/MESSAGE_INT/message_bin/\sh.exe
+C:/Programs/MESSAGE_INT/message_bin//devmsgui/units.exe -I C:/Programs/MESSAGE_INT/models/mms_fils adb TAOUSSA_RS TAOUSSA_RS > units.int
+bash.exe: warning: could not find /tmp, please create!
+OPEN GEN C:\Programs\MESSAGE_INT\models\TAOUSSA_RS
+data/TAOUSSA_RS.gen
+TAOUSSA_RS TAOUSSA_RS
+Generating region TAOUSSA_RS
+gen cen: 1 dec: 0 ext: 0
+stoch_ts_riskfunc: 1
+Infinite set to 1.000000e+31
+call srand48(time(NULL))
+HYDRO
+PV
+Elect_Tr_D
+Preparing matrix
+Writing matrix
+rows:       4152
+cols:       1984
+elms:      35444
+rhs:        2108
+rngs:          0
+bnds:         16
+merge in: intm/powerchs.mps
+time for merging: 0 sec
+time for sorting rows: 0 sec
+time for sorting columns: 0 sec
+time for writing columns: 0 sec
+time for freeing columns: 0 sec
+time for writing rhs: 0 sec
+time for writing ranges: 0 sec
+time for writing bounds: 0 sec
+Matrixgenerator done
+mxg done
+returncode: 0
+MSG_BIN C:/Programs/MESSAGE_INT/message_bin/
+tcmd C:\Programs\MESSAGE_INT\message_bin\tcsh C:\Programs\MESSAGE_INT\message_bin\glpk.sh TAOUSSA_RS_adb adb | C:\Programs\MESSAGE_INT\message_bin\tee TAOUSSA_RS_adb.itl
+out_bas: data/TAOUSSA_RS_adb.bas
+lpx_read_freemps: reading problem data from `intm/TAOUSSA_RS_adb.mps'...
+lpx_read_freemps: problem TAOUSSA_RS_adb
+lpx_read_freemps: 4152 rows, 1984 columns, 35444 non-zeros
+lpx_read_freemps: 41721 records were read
+lpx_simplex: original LP has 4152 rows, 1984 columns, 35444 non-zeros
+lpx_simplex: presolved LP has 2591 rows, 1963 columns, 16457 non-zeros
+lpx_adv_basis: size of triangular part = 2591
+      0:   objval =   8.597977281e+04   infeas =   1.000000000e+00 (0)
+    200:   objval =   1.139140326e+05   infeas =   9.460864380e-01 (0)
+    400:   objval =   1.461614336e+05   infeas =   7.781347455e-01 (0)
+    600:   objval =   2.068188341e+05   infeas =   4.511287760e-01 (0)
+    800:   objval =   2.312310251e+05   infeas =   3.065331491e-01 (0)
+   1000:   objval =   2.725572450e+05   infeas =   6.889878202e-02 (0)
+   1167:   objval =   2.864624969e+05   infeas =   2.456173345e-19 (0)
+*  1167:   objval =   2.864624969e+05   infeas =   1.387778781e-16 (0)
+*  1200:   objval =   2.851189745e+05   infeas =   0.000000000e+00 (0)
+*  1400:   objval =   2.686567892e+05   infeas =   0.000000000e+00 (0)
+*  1600:   objval =   2.589141665e+05   infeas =   0.000000000e+00 (0)
+*  1800:   objval =   2.529358427e+05   infeas =   0.000000000e+00 (0)
+*  2000:   objval =   2.495430298e+05   infeas =   0.000000000e+00 (0)
+*  2200:   objval =   2.472223795e+05   infeas =   0.000000000e+00 (0)
+*  2250:   objval =   2.465788157e+05   infeas =   0.000000000e+00 (0)
+OPTIMAL SOLUTION FOUND
+Time used:   1.0 secs
+Memory used: 5.2M (5493096 bytes)
+lpx_write_bas: writing LP basis to `data/TAOUSSA_RS_adb.bas'...
+lpx_print_sol: writing LP problem solution to `intm/TAOUSSA_RS_adb_lin.sol'...
+lpx_print_sens_bnds: writing LP problem solution bounds to `intm/TAOUSSA_RS_adb.sens'...
+optimization done
+'C:/Programs/MESSAGE_INT/message_bin/' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+elapsed time: 1.99799990654
+MSG_BIN C:/Programs/MESSAGE_INT/message_bin/
+tcmd C:\Programs\MESSAGE_INT\message_bin\tcsh -c "C:/Programs/MESSAGE_INT/message_bin/sol2dbm -s adb -o glpk  TAOUSSA_RS"
+sol2dbm done
+MSG_BIN C:/Programs/MESSAGE_INT/message_bin/
+tcmd C:\Programs\MESSAGE_INT\message_bin\tcsh -c "C:/Programs/MESSAGE_INT/message_bin/cap -s adb -c TAOUSSA_RS -t TAOUSSA_RS -T 'TAOUSSA_RS, adb' -g spr -o TAOUSSA_RS_adb -p 'MESSAGE Int_V2'  TAOUSSA_RS"
+naggregs: 0
+Could not open C:/Programs/MESSAGE_INT/message_bin//devmsgui/units.exe -I C:/Programs/MESSAGE_INT/models/mms_fils adb TAOUSSA_RS TAOUSSA_RS
+pid=4824
+pid=0
+C:/Programs/MESSAGE_INT/message_bin/\sh.exe
+C:/Programs/MESSAGE_INT/message_bin//devmsgui/units.exe -I C:/Programs/MESSAGE_INT/models/mms_fils adb TAOUSSA_RS TAOUSSA_RS > units.int
+bash.exe: warning: could not find /tmp, please create!
+OPEN GEN C:\Programs\MESSAGE_INT\models\TAOUSSA_RS
+data/TAOUSSA_RS.gen
+TAOUSSA_RS TAOUSSA_RS
+Suffix a for FE not known
+cap done
